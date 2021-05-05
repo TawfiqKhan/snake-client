@@ -13,16 +13,8 @@ const connect = function() {
 
   conn.on('connect', () => {
     conn.write("Name: THK");
-    // conn.write("Move: up")
-
-    // setInterval(() => {
-    //   conn.write("Move: up")
-    // }, 50);
   });
-  
-  // conn.on('connect', (input) => {
-    
-  // });
+
   conn.setEncoding("utf8");
   // console.log(conn);
   return conn;
