@@ -10,6 +10,10 @@ const connect = function() {
   conn.on('data', (data) => {
     console.log(data)
   });
+
+  conn.on('connect', () => {
+    conn.write("Name: THK");
+  });
   
   conn.setEncoding("utf8");
   // console.log(conn);
