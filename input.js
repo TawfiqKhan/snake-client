@@ -15,6 +15,9 @@ const handleUserInput = function (data) {
   if(data === "d") {
     connection.write("Move: right")
   }
+  if(data === "m") {
+    connection.write("Say: Gogo!")
+  }
 };
 const setupInput = function (conn) {
   connection = conn;
