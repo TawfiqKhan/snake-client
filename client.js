@@ -14,8 +14,10 @@ const connect = function() {
 
   conn.on('data', (data) => {
     console.log(data)
+    if(data === "you ded cuz you idled");
+    process.exit();
   });
-  
+
   conn.setEncoding("utf8");
   // console.log(conn);
   return conn;
